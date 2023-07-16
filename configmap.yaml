@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-env 
+  namespace: postgres-cluster
+data:
+  POSTGRES_PASSWORD: MTIzNDU2Nzg=
+  POSTGRES_USER: made
+  POSTGRES_DB: test_db
