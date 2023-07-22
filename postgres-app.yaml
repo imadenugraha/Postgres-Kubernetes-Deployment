@@ -37,6 +37,7 @@ spec:
       containers:
         - name: postgres
           image: postgres:15.3
+          imagePullPolicy: IfNotPresent
           env:
             - name: POSTGRES_PASSWORD
               valueFrom:
