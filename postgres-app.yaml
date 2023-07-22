@@ -19,20 +19,20 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: postgres-cluster
+  name: postgres-app
   namespace: postgres-cluster
   labels:
-    app: postgres-cluster
+    app: postgres-app
 spec:
   serviceName: postgres-cluster-service
   replicas: 2
   selector:
     matchLabels:
-      app: postgres-cluster
+      app: postgres-app
   template:
     metadata:
       labels:
-        app: postgres-cluster
+        app: postgres-app
     spec:
       containers:
         - name: postgres
