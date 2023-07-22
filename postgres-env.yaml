@@ -6,4 +6,4 @@ metadata:
   namespace: postgres-cluster
 data:
   user: made
-  db: test_db
+  database: test_db
